@@ -1,0 +1,112 @@
+.services {
+  padding-top: 3%;
+  min-height: 60vh;
+  background-image: linear-gradient(to right, #151515, #252525, #151515);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services h2 {
+  color: #00B8E4;
+}
+
+/* FORM ====================== */
+.services form {
+  align-self: center;
+  margin-top: 2%;
+
+  display: flex;
+  align-items: center;
+}
+
+.services form .form-group {
+  margin-right: 45px;
+}
+
+.services form .form-group label {
+  color: #fff;
+  font-size: 1.1em;
+}
+
+.services form button {
+  width: 150px;
+  align-self: flex-end;
+}
+
+.services form button:hover {
+  background-color: #fff;
+  color: #00B8E4;
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* CARDS ================ */
+.services .list-rooms {
+  margin-top: 8%;
+  margin-bottom: 10%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services .list-rooms .card {
+  background-image: linear-gradient(to right, #ddd, #fff, #ddd);
+  width: 420px;
+  padding: 20px;
+  border-radius: 6px;
+  margin-right: 75px;
+  margin-top: 75px;
+  transition: box-shadow 0.3s ease-in;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.services .list-rooms .card img {
+  width: 100%;
+  height: 280px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.services .list-rooms .card .card-info .status-room {
+  font-weight: 600;
+}
+
+.services .list-rooms .card .card-info ul {
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.services .list-rooms .card .card-info button {
+  font-size: 16px;
+  height: 45px;
+}
+
+
+/* ACTIVE OR NOT ========= */
+.services .list-rooms .card.active .status-room {
+  color: #0F8B51;
+}
+
+.services .list-rooms .card.disable .status-room {
+  color: #DD3B4A;
+}
+
+.services .list-rooms .card.active button {
+  background-color: #439D73;
+}
+
+.services .list-rooms .card.active button:hover {
+  background-color: #fff;
+  color: #439D73;
+}
+
+.services .list-rooms .card.disable button {
+  background-color: #888;
+  cursor: not-allowed;
+}

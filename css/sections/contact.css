@@ -1,0 +1,123 @@
+.contact {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to right, #151515, #252525, #151515);
+}
+
+.contact h2 {
+  color: #fff;
+  margin-top: 3%;
+}
+
+.contact .contact-main {
+  width: 100%;
+
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact .contact-main img {
+  width: 520px;
+}
+
+/* FORM ============== */
+.contact .contact-main .form-contact {
+  width: 480px;
+  background-image: linear-gradient(to bottom, #ccc, #ddd, #ccc);
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.contact .contact-main .form-contact .form-group {
+  margin-bottom: 20px;
+}
+
+
+.contact .contact-main .form-contact form button {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+
+.contact .contact-main .form-contact form button:hover {
+  background-color: #fff;
+  color: #00B8E4;
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.contact .contact-main .form-contact .other-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact .contact-main .form-contact .other-contacts span {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+/* LIST ICONS ================= */
+.contact .contact-main .form-contact .other-contacts ul {
+  display: flex;
+  margin-top: 20px;
+}
+
+.contact .contact-main .form-contact .other-contacts ul li {
+  margin-right: 22px;
+}
+
+.contact .contact-main .form-contact .other-contacts ul li i {
+  font-size: 1.3em;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  transition: 0.2s ease-in;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ICONS ===================== */
+
+.contact .contact-main .form-contact .other-contacts ul li i.facebook {
+  background-color: #1877F2;
+}
+
+.contact .contact-main .form-contact .other-contacts ul li i.facebook:hover {
+  background-color: #fff;
+  color: #1877F2;
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.contact .contact-main .form-contact .other-contacts ul li i.instagram {
+  background-color: #B82B6E;
+}
+
+.contact .contact-main .form-contact .other-contacts ul li i.instagram:hover {
+  background-color: #fff;
+  color: #B82B6E;
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.contact .contact-main .form-contact .other-contacts ul li i.gmail {
+  background-color: #BB201D;
+}
+
+.contact .contact-main .form-contact .other-contacts ul li i.gmail:hover {
+  background-color: #fff;
+  color: #BB201D;
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.4);
+}

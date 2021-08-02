@@ -1,0 +1,37 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+}
+
+header .logo i {
+  font-size: 1.8em;
+  margin-right: 10px;
+}
+
+header .logo h1 {
+  font-size: 2.3em;
+}
+
+header nav {
+  margin-right: 50px;
+}
+
+header nav a {
+  color: #fff;
+  font-size: 1.1em;
+  margin-right: 25px;
+  transition: opacity 0.2s;
+}
+
+header nav a:hover {
+  opacity: 0.6;
+}

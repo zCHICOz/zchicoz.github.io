@@ -1,0 +1,13 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #aaa, #fafafa, #aaa);
+  padding: 20px;
+}
+
+footer span {
+  color: #282828;
+  font-size: 0.9em;
+  font-weight: 500;
+}

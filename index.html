@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/sections/home.css">
+    <link rel="stylesheet" href="./css/sections/services.css">
+    <link rel="stylesheet" href="./css/sections/about.css">
+    <link rel="stylesheet" href="./css/sections/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/d987aa355c.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="container-home" id="home">
+      <header>
+        <div class="logo">
+          <i class="fas fa-hotel"></i>
+          <h1>Hotel</h1>
+        </div>
+
+        <nav>
+          <a href="#">
+            Home
+          </a>
+
+          <a href="#services">
+            Serviços
+          </a>
+
+          <a href="#about">
+            Sobre Nós
+          </a>
+
+          <a href="#contact">
+            Contato
+          </a>
+        </nav>
+      </header>
+
+      <section class="home">
+        <h2>Lorem ipsum dolor</h2> 
+        <h4>
+          sit amet consectetur 
+          adipisicing elit.
+        </h4>
+      </section>
+    </section>
+    
+    <main>
+      <section class="services" id="services">
+        <h2 class="title-section">Escolha seu quarto</h2>
+
+        <form>
+          <div class="form-group">
+            <label for="amount-beds">Número de camas</label>
+            <input type="number" id="amount-beds" placeholder="0" min="0" max="5">
+          </div>
+
+          <div class="form-group">
+            <label for="entry-date">Data de entrada</label>
+            <input type="date" id="entry-date">
+          </div>
+
+          <div class="form-group">
+            <label for="exit-date">Data de saída</label>
+            <input type="date" id="exit-date">
+          </div>
+
+          <div class="form-group">
+            <label for="amount-peoples">Número de pessoas</label>
+            <input type="number" id="amount-peoples" placeholder="0" min="0" max="5">
+          </div>
+
+          <button type="submit">
+            Pesquisar
+          </button>
+        </form>
+
+        <aside class="list-rooms">
+          <article class="card active">
+            <img src="./img/hotels/quarto-01.jpg" alt="Quarto do hotel">
+
+            <div class="card-info">
+              <span class="status-room">Disponível</span>
+
+              <ul>
+                <li>Pernoite: R$420,00</li>
+                <li>Camas: 1</li>
+              </ul>
+
+              <button type="button">
+                Reservar
+              </button>
+            </div>
+          </article>
+
+          <article class="card disable">
+            <img src="./img/hotels/quarto-02.jpg" alt="Quarto do hotel">
+
+            <div class="card-info">
+              <span class="status-room">Indisponível</span>
+
+              <ul>
+                <li>Pernoite: R$500,00</li>
+                <li>Camas: 2</li>
+              </ul>
+
+              <button type="button">
+                Reservar
+              </button>
+            </div>
+          </article>
+
+          <article class="card active">
+            <img src="./img/hotels/quarto-03.jpg" alt="Quarto do hotel">
+
+            <div class="card-info">
+              <span class="status-room">Disponível</span>
+
+              <ul>
+                <li>Pernoite: R$600,00</li>
+                <li>Camas: 1</li>
+              </ul>
+
+              <button type="button">
+                Reservar
+              </button>
+            </div>
+          </article>
+
+          <article class="card disable">
+            <img src="./img/hotels/quarto-04.jpg" alt="Quarto do hotel">
+
+            <div class="card-info">
+              <span class="status-room">Indisponível</span>
+
+              <ul>
+                <li>Pernoite: R$550,00</li>
+                <li>Camas: 2</li>
+              </ul>
+
+              <button type="button">
+                Reservar
+              </button>
+            </div>
+          </article>
+        </aside>
+      </section>
+
+      <section class="about" id="about">
+        <h2 class="title-section">Sobre nós</h2>
+
+        <div class="images-about-container">
+          <div class="image-about">
+            <img src="./img/aboutUs/sobreNos-01.jpg" alt="Sócio do Hotel">
+            <span>Luis Antonio (Sócio)</span>
+          </div>
+
+          <div class="image-about">
+            <img src="./img/aboutUs/sobreNos-02.jpg" alt="Dona do Hotel">
+            <span>Fernanda (Dona)</span>
+          </div>
+
+          <div class="image-about">
+            <img src="./img/aboutUs/sobreNos-03.jpg" alt="Sócio do Hotel">
+            <span>Gabriel (Sócio)</span>
+          </div>
+        </div>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolorem, nesciunt culpa 
+          voluptate libero laudantium facere quidem dicta dolores eaque eum tenetur dignissimos repellat 
+          magni at molestias vel harum amet!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolorem, nesciunt culpa 
+          voluptate libero laudantium facere quidem dicta dolores eaque eum tenetur dignissimos repellat 
+          magni at molestias vel harum amet!
+        </p>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2 class="title-section">Contato</h2>
+
+        <aside class="contact-main">
+          <img src="./img/contact-img.svg" alt="Imagem contato">
+
+          <div class="form-contact">
+            <form>
+              <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" placeholder="Luis Antonio">
+              </div>
+  
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="example@gmail.com">
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Assunto</label>
+                <input type="text" id="subject" placeholder="Reserva de hotel">
+              </div>
+
+              <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea 
+                  name="message" 
+                  id="message"
+                  placeholder="Olá, gostaria de saber..."
+                ></textarea>
+              </div>
+  
+              <button>Enviar</button>
+            </form>
+  
+            <div class="other-contacts">
+              <span>Ou entre em contato por:</span>
+  
+              <ul>
+                <li>
+                  <i class="fab fa-facebook-f facebook"></i>
+                </li>
+                <li>
+                  <i class="fab fa-instagram instagram"></i>
+                </li>
+                <li>
+                  <i class="fab fa-google gmail"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <span>
+        &copy; Hotel, 2021 - Todos os direitos reservados.
+      </span>
+    </footer>
+  </body>
+</html>
