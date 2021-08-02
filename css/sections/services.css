@@ -43,12 +43,8 @@
 
 /* CARDS ================ */
 .services .list-rooms {
-  margin-top: 8%;
+  margin-top: 3%;
   margin-bottom: 10%;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .services .list-rooms .card {
@@ -87,9 +83,19 @@
   height: 45px;
 }
 
+.services .list-rooms .card .card-info button.cancel {
+  background: #DD3B4A;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.services .list-rooms .card .card-info button.cancel:hover {
+  background: #fff;
+  color: #DD3B4A;
+}
 
 /* ACTIVE OR NOT ========= */
-.services .list-rooms .card.active .status-room {
+.services .list-rooms .card.available .status-room {
   color: #0F8B51;
 }
 
@@ -97,16 +103,27 @@
   color: #DD3B4A;
 }
 
-.services .list-rooms .card.active button {
+.services .list-rooms .card.reserved button {
   background-color: #439D73;
-}
-
-.services .list-rooms .card.active button:hover {
-  background-color: #fff;
-  color: #439D73;
 }
 
 .services .list-rooms .card.disable button {
   background-color: #888;
   cursor: not-allowed;
+}
+
+
+/* SHOW OR NOT LIST ROOMS ============= */
+.services .list-rooms.show-list-rooms {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services .list-rooms.close-list-room {
+  display: none;
+}
+
+.services .list-rooms .card .card-info button.cancel {
+  display: none;
 }

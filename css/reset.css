@@ -29,6 +29,11 @@ input, button, textarea  {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+textarea {
+  height: 90px;
+  resize: none;
+}
+
 button {
   background-color: #00B8E4;
   color: #fff;
@@ -65,4 +70,8 @@ h2.title-section {
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.title-section {
+  margin-top: 6%;
 }

@@ -19,6 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- ICONS -->
     <script src="https://kit.fontawesome.com/d987aa355c.js" crossorigin="anonymous"></script>
+    <script src="./js/searchRooms.js" defer></script>
+    <script src="./js/reservedRoom.js" defer></script>
   </head>
   <body>
     <section class="container-home" id="home">
@@ -81,13 +83,13 @@
             <input type="number" id="amount-peoples" placeholder="0" min="0" max="5">
           </div>
 
-          <button type="submit">
+          <button type="submit" id="btn-search-rooms">
             Pesquisar
           </button>
         </form>
 
-        <aside class="list-rooms">
-          <article class="card active">
+        <aside class="list-rooms close-list-room" id="list-rooms">
+          <article class="card available" id="card-01">
             <img src="./img/hotels/quarto-01.jpg" alt="Quarto do hotel">
 
             <div class="card-info">
@@ -98,13 +100,19 @@
                 <li>Camas: 1</li>
               </ul>
 
-              <button type="button">
-                Reservar
-              </button>
+              <div class="btns-card">
+                <button type="button" id="btn-reserve-01" onclick="reservedRoom(this, 'btn-cancel-reserve-01')">
+                  Reservar
+                </button>
+
+                <button type="button" class="cancel" id="btn-cancel-reserve-01" onclick="cancelReserve(this, 'btn-reserve-01')">
+                  Cancelar
+                </button>
+              </div>
             </div>
           </article>
 
-          <article class="card disable">
+          <article class="card disable" id="card-02">
             <img src="./img/hotels/quarto-02.jpg" alt="Quarto do hotel">
 
             <div class="card-info">
@@ -115,13 +123,13 @@
                 <li>Camas: 2</li>
               </ul>
 
-              <button type="button">
+              <button type="button" disabled>
                 Reservar
               </button>
             </div>
           </article>
 
-          <article class="card active">
+          <article class="card available active"  id="card-03">
             <img src="./img/hotels/quarto-03.jpg" alt="Quarto do hotel">
 
             <div class="card-info">
@@ -132,13 +140,19 @@
                 <li>Camas: 1</li>
               </ul>
 
-              <button type="button">
-                Reservar
-              </button>
+              <div class="btns-card">
+                <button type="button" id="btn-reserve-03" onclick="reservedRoom(this, 'btn-cancel-reserve-03')">
+                  Reservar
+                </button>
+
+                <button type="button" class="cancel" id="btn-cancel-reserve-03" onclick="cancelReserve(this, 'btn-reserve-03')">
+                  Cancelar
+                </button>
+              </div>
             </div>
           </article>
 
-          <article class="card disable">
+          <article class="card disable" id="card-04">
             <img src="./img/hotels/quarto-04.jpg" alt="Quarto do hotel">
 
             <div class="card-info">
@@ -149,7 +163,7 @@
                 <li>Camas: 2</li>
               </ul>
 
-              <button type="button">
+              <button type="button" disabled>
                 Reservar
               </button>
             </div>
@@ -212,7 +226,7 @@
 
               <div class="form-group">
                 <label for="message">Mensagem</label>
-                <textarea 
+                <textarea
                   name="message" 
                   id="message"
                   placeholder="Olá, gostaria de saber..."
@@ -248,4 +262,6 @@
       </span>
     </footer>
   </body>
+
+ 
 </html>

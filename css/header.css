@@ -1,4 +1,13 @@
+.container-home {
+  padding: 0px;
+}
+
 header {
+  background-image: linear-gradient(to right, #008FB1, #00C8F8, #008FB1);
+  position: fixed;
+  width: 100%;
+  padding: 12px;
+  
   display: flex;
   align-items: center;
   justify-content: space-between;

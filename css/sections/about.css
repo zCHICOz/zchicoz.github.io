@@ -8,6 +8,10 @@
   align-items: center;
 }
 
+.about h2 {
+  color: #333;
+}
+
 .about .images-about-container {
   margin-bottom: 5%;
   margin-top: 2%;
@@ -50,6 +54,6 @@
   text-align: center;
   font-size: 1.2em;
   width: 85%;
-  margin-top: 5%;
+  margin-top: 2%;
   margin-bottom: 5%;
 }
