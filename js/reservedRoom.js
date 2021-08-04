@@ -10,7 +10,6 @@ function reservedRoom(e, btnCancel) {
   card.classList.add('reserved');
 };
 
-
 function cancelReserve(e, btnReserve) {
   const buttonsContainer = e.parentElement;
   const cardInfo = buttonsContainer.parentElement;

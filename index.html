@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel</title>
+    <title>Gran Hotel</title>
+    <link rel="icon" href="./img/icon.png" />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/header.css">
@@ -21,16 +22,17 @@
     <script src="https://kit.fontawesome.com/d987aa355c.js" crossorigin="anonymous"></script>
     <script src="./js/searchRooms.js" defer></script>
     <script src="./js/reservedRoom.js" defer></script>
+    <script src="./js/email.js" defer></script>
   </head>
   <body>
     <section class="container-home" id="home">
       <header>
-        <div class="logo">
+        <a href="#home" class="logo">
           <i class="fas fa-hotel"></i>
-          <h1>Hotel</h1>
-        </div>
+          <h1>Gran Hotel</h1>
+        </a>
 
-        <nav>
+        <nav class="menu">
           <a href="#">
             Home
           </a>
@@ -50,10 +52,9 @@
       </header>
 
       <section class="home">
-        <h2>Lorem ipsum dolor</h2> 
+        <h2>Gran Hotel</h2>
         <h4>
-          sit amet consectetur 
-          adipisicing elit.
+          “Servir é criar momentos únicos.”
         </h4>
       </section>
     </section>
@@ -151,23 +152,6 @@
               </div>
             </div>
           </article>
-
-          <article class="card disable" id="card-04">
-            <img src="./img/hotels/quarto-04.jpg" alt="Quarto do hotel">
-
-            <div class="card-info">
-              <span class="status-room">Indisponível</span>
-
-              <ul>
-                <li>Pernoite: R$550,00</li>
-                <li>Camas: 2</li>
-              </ul>
-
-              <button type="button" disabled>
-                Reservar
-              </button>
-            </div>
-          </article>
         </aside>
       </section>
 
@@ -205,7 +189,7 @@
         <h2 class="title-section">Contato</h2>
 
         <aside class="contact-main">
-          <img src="./img/contact-img.svg" alt="Imagem contato">
+          <img src="./img/contact/contact-img.svg" alt="Imagem contato">
 
           <div class="form-contact">
             <form>
@@ -233,7 +217,7 @@
                 ></textarea>
               </div>
   
-              <button>Enviar</button>
+              <button type="button" onclick="sendEmail()">Enviar</button>
             </form>
   
             <div class="other-contacts">
@@ -262,6 +246,4 @@
       </span>
     </footer>
   </body>
-
- 
 </html>

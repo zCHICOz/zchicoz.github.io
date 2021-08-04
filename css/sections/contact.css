@@ -120,3 +120,25 @@
   color: #BB201D;
   box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
+
+/* MEDIA QUERIES ============== */
+@media (max-width: 1100px) {
+  .contact .contact-main img {
+    display: none;
+  }
+
+  .contact .contact-main {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact .contact-main .form-contact {
+    width: 75%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact .contact-main .form-contact {
+    width: 95%;
+  }
+}

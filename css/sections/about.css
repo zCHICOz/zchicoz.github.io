@@ -18,13 +18,15 @@
 
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .about .images-about-container .image-about {
   margin-right: 75px;
   margin-left: 75px;
+  margin-top: 75px;
   cursor: pointer;
-
 
   display: flex;
   flex-direction: column;
@@ -37,8 +39,8 @@
 }
 
 .about .images-about-container .image-about img {
-  width: 400px;
-  height: 300px;
+  width: 350px;
+  height: 250px;
   border-radius: 22px;
 
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
@@ -56,4 +58,15 @@
   width: 85%;
   margin-top: 2%;
   margin-bottom: 5%;
+}
+
+@media (max-width: 600px) {
+  .about .images-about-container .image-about img {
+    width: 250px;
+    height: 180px;
+  }
+
+  .about .images-about-container .image-about span {
+    font-size: 0.9em;
+  }
 }
