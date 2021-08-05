@@ -1,9 +1,11 @@
 .container-home .home {
   background-image: url('../../img/background-home.png');
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: 100%;
   color: #fff;
   min-height: 100vh;
+
+  background-color: #0E0908;
 }
 
 .container-home .home h2 {
